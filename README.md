@@ -21,12 +21,22 @@ The dataset captures seasonality, trends, and variability common in real retail 
 - notebooks/03_business_evaluation.ipynb — Translating forecasts into business risk
 
 ## 5. Key Insights
-(To be filled after modeling)
+- Demand exhibits clear temporal patterns, including trend and weekly seasonality.
+- Simple baselines provide strong reference points but struggle during demand shifts.
+- ARIMA improves forecast accuracy by modeling temporal dependencies.
+- Business evaluation shows that minimizing statistical error alone is insufficient.
+- Forecast-driven inventory decisions must account for asymmetric costs of stockouts and overstocking.
 
-## 6. Tech Stack
+## 6. Business Impact Summary
+
+By translating forecast errors into inventory risk costs, the project demonstrates
+how forecasting models influence real-world operational decisions. The ARIMA model
+consistently reduces estimated stockout-related costs compared to baseline approaches.
+
+## 7. Tech Stack
 Python, Pandas, NumPy, Statsmodels / Prophet, Matplotlib, Jupyter Notebook
 
-## 7. Next Improvements
+## 8. Next Improvements
 - Multi-item forecasting
 - External regressors (promotions, holidays)
 - Automated retraining pipelines
